@@ -1,0 +1,50 @@
+.snake-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  width: 90vmin;
+  height: 90vmin;
+  background: #ccc;
+  border: 2px solid #000;
+}
+
+.cell {
+  border: 1px solid #eee;
+  background: white;
+}
+
+.cell.snake {
+  background: green;
+}
+
+.cell.food {
+  background: red;
+}
+
+.controls {
+  margin-top: 20px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.controls button {
+  padding: 15px;
+  font-size: 20px;
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Show controls only on small screens */
+@media (max-width: 768px) {
+  .controls {
+    display: flex;
+  }
+}
